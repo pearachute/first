@@ -27,3 +27,10 @@ year = []
 
 for i in range(2011,2021):
     year.append(i)
+
+plt.rc('font', family='Malgun Gothic')
+fig, ax1 = plt.subplots()
+ax1.set_title('방한 외래관광객')
+ax1.plot(year, x_axes, '-o',color="red")
+plt.bar(year,x_axes,color='gray')
+plt.show()
