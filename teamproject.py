@@ -14,6 +14,7 @@ tourist_table_tbody_row.remove(tourist_table_tbody_row[1])
 x_axes=[]
 d=[]
 td = tourist_table_tbody_row[0].find_all('td')
+
 for content in td:
     d.append(content.get_text())
 
@@ -23,5 +24,6 @@ for i in d:
     x_axes.append(i_1)
 print(x_axes)
 year = []
+
 for i in range(2011,2021):
     year.append(i)
